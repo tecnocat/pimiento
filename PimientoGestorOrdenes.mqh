@@ -278,6 +278,7 @@ void MueveStopLoss(const int orden, const int tics)
 //+------------------------------------------------------------------+
 void Vende(const double stopLoss = 0, const double takeProfit = 0, double lotaje = 0)
 {
+    // Si no pasamos lotaje lo auto calculamos, mírate el gestor del símbolo
     if (0 == lotaje)
     {
         lotaje = CalculaLotaje();
